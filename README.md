@@ -23,4 +23,3 @@ TelegramBotToken = 'Your_secret_tg_token' #from @BotFather
 python sender.py --database ids.txt --text msg.txt --image image.png --inline inline.txt
 ```
 
-Enjoy! 

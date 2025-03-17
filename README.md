@@ -36,3 +36,7 @@ python sender.py --database ids.txt --text msg.txt --image image.png --inline in
 All data format exaples in files ids.txt, inline.txt, msg.txt and image.png.
 
 
+#### !TODO Multithreading, procentage with all statisctics
+Also, you can merge it and develop whis soft together 
+
+## Give star, if this tool was helpfull for you ⭐️

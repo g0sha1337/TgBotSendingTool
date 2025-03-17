@@ -16,16 +16,20 @@ The main need for this application is that not all backend telegram bots support
 
 ## What is needed to launch?
 
-### 1) Install requirements.txt
+### 1) Clone repo and change work dirictory
+```
+git clone https://github.com/g0sha1337/TgBotSendingTool.git && cd TgBotSendingTool
+```
+### 2) Install requirements.txt
 ```
 pip install -r requirements.txt
 ```
-### 2) Put token of your bot in config.py
+### 3) Put token of your bot in config.py
 ```
 TelegramBotToken = 'Your_secret_tg_token' #from @BotFather
 ```
-### 3) Extract telegram ids from your database and put it in database txt file
-### 4) Prepare your text message file, image and inline buttons
+### 4) Extract telegram ids from your database and put it in database txt file
+### 5) Prepare your text message file, image and inline buttons
 
 # Example of usage
 

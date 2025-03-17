@@ -1,4 +1,4 @@
-# TgBotSenderTool
+# TgBotSendingTool
 Tool for sending advertising or any other announcements to the id-database in your telegram bot
 
 ## What was this utility written for?

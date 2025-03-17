@@ -11,7 +11,7 @@ failed = 0
 async def send_notifications(text_file, image_file, gif_file, inline_file, database_file):
     
     bot = Bot(token=config.TelegramBotToken)
-    global sended
+    global sent
     global failed
 
     try:

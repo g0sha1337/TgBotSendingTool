@@ -1,5 +1,5 @@
 # TgBotSenderTool
-Tool for sending advertising or any other notifications to the id-database in your telegram bot
+Tool for sending advertising or any other announcements to the id-database in your telegram bot
 
 ## What was this utility written for?
 The main need for this application is that not all backend telegram bots support effective sending alerts to users. This software allows you to make a sending alerts to your bot user base in a format convenient for you.

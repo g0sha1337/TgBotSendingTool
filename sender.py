@@ -6,11 +6,13 @@ from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup
 import config
 
 sended = 0 
+failed = 0
 
 async def send_notifications(text_file, image_file, gif_file, inline_file, database_file):
     
     bot = Bot(token=config.TelegramBotToken)
     global sended
+    global failed
 
     try:
 
@@ -62,8 +64,9 @@ async def send_notifications(text_file, image_file, gif_file, inline_file, datab
                 sended += 1
             except Exception as e:
                 logger.error(f"Error with sending message to {user_id}: {e}")
+                failed +=1
 
-        logger.success(f"All messages were sent! Total sent: {sended}")
+        logger.success(f"All messages were sent! Total successfully sent: {sended}, failed: {failed}")
     except Exception as e:
         logger.error(f"Some error accured: {e}")
 

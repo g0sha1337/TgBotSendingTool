@@ -9,6 +9,11 @@ The main need for this application is that not all backend telegram bots support
     <img src="images/preview.png" />
 </div></details> 
 
+<details> <summary>Example of working log</summary>
+<div align="center">
+    <img src="images/log.png" />
+</div></details> 
+
 ## What is needed to launch?
 
 ### 1) Install requirements.txt

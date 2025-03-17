@@ -1,0 +1,15 @@
+*Example of message*
+
+
+✨ Some other information:
+
+    🚀 Elon Mask likes rockets
+
+    📱  Telegram is the best messanger
+
+    🐳 Whales whales whales!
+
+
+
+Send advertising or any other notifications to the id-database in your own telegram bot! 🌐✨
+    👉 [Example with links in text](https://github.com/g0sha1337) 👈

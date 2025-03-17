@@ -1,0 +1,1 @@
+Example of inline link, https://github.com/g0sha1337

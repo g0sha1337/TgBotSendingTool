@@ -9,7 +9,7 @@ The main need for this application is that not all backend telegram bots support
     <img src="images/preview.png" />
 </div></details> 
 
-<details> <summary>Example of working log</summary>
+<details> <summary>Screenshot of working log</summary>
 <div align="center">
     <img src="images/log.png" />
 </div></details> 

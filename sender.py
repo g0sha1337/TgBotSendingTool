@@ -5,7 +5,7 @@ from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup
 
 import config
 
-sended = 0 
+sent = 0 
 failed = 0
 
 async def send_notifications(text_file, image_file, gif_file, inline_file, database_file):
@@ -61,12 +61,12 @@ async def send_notifications(text_file, image_file, gif_file, inline_file, datab
                         await bot.send_message(chat_id=user_id, text=message, parse_mode='Markdown',)
 
                 logger.info(f"Message sent to {user_id}")
-                sended += 1
+                sent += 1
             except Exception as e:
                 logger.error(f"Error with sending message to {user_id}: {e}")
                 failed +=1
 
-        logger.success(f"All messages were sent! Total successfully sent: {sended}, failed: {failed}")
+        logger.success(f"All messages were sent! Total successfully sent: {sent}, failed: {failed}")
     except Exception as e:
         logger.error(f"Some error accured: {e}")
 

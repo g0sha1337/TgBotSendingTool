@@ -30,14 +30,20 @@ TelegramBotToken = 'Your_secret_tg_token' #from @BotFather
 ```
 ### 4) Extract telegram ids from your database and put it in database txt file
 ### 5) Prepare your text message file, image and inline buttons
+All data format exaples in files ids.txt, inline.txt, msg.txt and image.png.
 
-# Example of usage
+
+# Usage
 
 ```
 python sender.py --database ids.txt --text msg.txt --image image.png --inline inline.txt
 ```
+- `--database ids.txt`  Database with telegram-IDs of users your bot. It is nessessory file to run this tool. [Example](https://github.com/g0sha1337/TgBotSendingTool/blob/main/ids.txt) 
+- `--text msg.txt` Main text of your message. Should be writtent on markdown (links and etc) [Example](https://github.com/g0sha1337/TgBotSendingTool/blob/main/msg.txt) 
+- `--image img.png` Image, that will be sent with your text 
+- `--gif gif.gif` Gif, that will be sent with your text
+- `--inline inline.txt` List of inline buttons in format ButtonName, Link [Example](https://github.com/g0sha1337/TgBotSendingTool/blob/main/inline.txt) 
 
-All data format exaples in files ids.txt, inline.txt, msg.txt and image.png.
 
 
 #### !TODO Multithreading, procentage with all statisctics

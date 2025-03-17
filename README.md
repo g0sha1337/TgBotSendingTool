@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ```
 TelegramBotToken = 'Your_secret_tg_token' #from @BotFather
 ```
-### 3) Extract telegram id from your database and fill it in database txt file
+### 3) Extract telegram ids from your database and fill it in database txt file
 ### 4) Prepare your text message file, image and inline buttons
 
 # Example of usage

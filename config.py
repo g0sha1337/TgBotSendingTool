@@ -1,3 +1,7 @@
 #Config file with your secret telegram token
-TelegramBotToken = '6415450028:AAG99BhsgG6tkRVRZXowjt816DkT7zhuCKk' #from @BotFather
+<<<<<<< HEAD
+TelegramBotToken = 'your_token' #from @BotFather
 disable_web_page_preview=True # links in message without links, true for default
+=======
+TelegramBotToken = 'Your_secret_tgbot_token' #from @BotFather
+>>>>>>> parent of f94c4f9 (add disable_web_page_preview parameter)

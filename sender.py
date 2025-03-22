@@ -49,16 +49,16 @@ async def send_notifications(text_file, image_file, gif_file, inline_file, datab
                         with open(gif_file, 'rb') as gif:
                             await bot.send_animation(chat_id=user_id, animation=gif, caption=message, parse_mode='Markdown', reply_markup=inline_keyboard)
                     else :
-                        await bot.send_message(chat_id=user_id, text=message,parse_mode='Markdown',  reply_markup=inline_keyboard)
+                        await bot.send_message(chat_id=user_id, text=message,parse_mode='Markdown',  reply_markup=inline_keyboard, disable_web_page_preview=config.disable_web_page_preview)
                 else: 
                     if image_file:
                         with open(image_file, 'rb') as img:
-                            await bot.send_photo(chat_id=user_id, photo=img, caption=message, parse_mode='Markdown',)
+                            await bot.send_photo(chat_id=user_id, photo=img, caption=message, parse_mode='Markdown')
                     elif gif_file:
                         with open(gif_file, 'rb') as gif:
-                            await bot.send_animation(chat_id=user_id, animation=gif, caption=message, parse_mode='Markdown',)
+                            await bot.send_animation(chat_id=user_id, animation=gif, caption=message, parse_mode='Markdown')
                     else :
-                        await bot.send_message(chat_id=user_id, text=message, parse_mode='Markdown',)
+                        await bot.send_message(chat_id=user_id, text=message, parse_mode='Markdown', disable_web_page_preview=config.disable_web_page_preview)
 
                 logger.info(f"Message sent to {user_id}")
                 sent += 1
@@ -79,5 +79,9 @@ if __name__ == '__main__':
     parser.add_argument('--database', type=str, help='Path to the id database file')
 
     args = parser.parse_args()
+
+    if not args.database:
+        parser.print_help() 
+        exit(1)
 
     asyncio.run(send_notifications(args.text, args.image, args.gif, args.inline, args.database))

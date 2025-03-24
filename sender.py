@@ -49,7 +49,7 @@ async def send_notifications(text_file, image_file, gif_file, inline_file, datab
                         with open(gif_file, 'rb') as gif:
                             await bot.send_animation(chat_id=user_id, animation=gif, caption=message, parse_mode='Markdown', reply_markup=inline_keyboard)
                     else :
-                        await bot.send_message(chat_id=user_id, text=message,parse_mode='Markdown',  reply_markup=inline_keyboard)
+                        await bot.send_message(chat_id=user_id, text=message,parse_mode='Markdown',  reply_markup=inline_keyboard, disable_web_page_preview=config.disable_web_page_preview)
                 else: 
                     if image_file:
                         with open(image_file, 'rb') as img:
@@ -58,7 +58,7 @@ async def send_notifications(text_file, image_file, gif_file, inline_file, datab
                         with open(gif_file, 'rb') as gif:
                             await bot.send_animation(chat_id=user_id, animation=gif, caption=message, parse_mode='Markdown',)
                     else :
-                        await bot.send_message(chat_id=user_id, text=message, parse_mode='Markdown',)
+                        await bot.send_message(chat_id=user_id, text=message, parse_mode='Markdown',disable_web_page_preview=config.disable_web_page_preview)
 
                 logger.info(f"Message sent to {user_id}")
                 sent += 1
